@@ -23,7 +23,7 @@ const Home = () => {
             setLoading(true);
 
             try {
-                const response = await fetch('https://respect.onrender.com', {
+                const response = await fetch('https://respect.onrender.com/api/v1/post', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
