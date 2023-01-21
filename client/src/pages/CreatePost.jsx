@@ -19,7 +19,7 @@ const CreatePost = () => {
     if(form.prompt) {
       try {
         setGenerateingImg(true);
-        const response = await fetch('https://respect.onrender.com', {
+        const response = await fetch('https://respect.onrender.com/api/v1/dalle', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
